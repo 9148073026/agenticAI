@@ -1,0 +1,47 @@
+# Import the packages
+# Load the packages
+from http import client
+import os
+import json
+import dotenv
+from openai import OpenAI, api_key
+from ollama import Client, LLM
+from dotenv import load_dotenv
+import chromadb
+import openai
+import os
+
+load_dotenv()
+
+api_key = os.getenv("OPENAI_API_KEY")
+ollama_api_key = os.getenv("OLLAMA_API_KEY")
+
+if api_key:
+    print("API key loaded successfully")
+else:
+    print("API key NOT found")
+
+openai.api_key = api_key
+# print("OpenAI API key:", openai.api_key)
+
+# client = OpenAI(api_key=api_key)
+# print("OpenAI client initialized:", client)
+client = Client()
+
+#communicate with the model
+model_name = "ollama/llama2"            
+
+response = client.chat(
+    model=model_name,
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "What is the capital of France?"}
+    ]
+)
+
+
+print("Response from ollama API:")
+print(response.choices[0].message.content)  
+
+
+

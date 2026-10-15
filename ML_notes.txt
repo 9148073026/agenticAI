@@ -1,0 +1,7 @@
+Python fundamentals — variables, loops, functions, lists/dictionaries, classes, NumPy, Pandas, Matplotlib.
+Essential mathematics — basic statistics and probability, vectors/matrices, derivatives and gradients. You don't need advanced mathematics before starting.
+Core ML concepts — features/labels, training vs testing, supervised vs unsupervised learning, regression vs classification, overfitting/underfitting, bias/variance, evaluation metrics.
+Main algorithms — linear & logistic regression, decision trees, random forests, gradient boosting, K-means clustering, K-nearest neighbors, and an introduction to neural networks.
+Scikit-learn — loading/preparing data, preprocessing, training models, evaluating them, cross-validation, pipelines and hyperparameter tuning.
+Then Deep Learning — neural networks, PyTorch (or TensorFlow), embeddings, transformers, and eventually LLM fundamentals.
+Build projects — this is where ML really becomes understandable. Examples could include transaction fraud detection, customer churn prediction, credit-risk classification, or forecasting.
